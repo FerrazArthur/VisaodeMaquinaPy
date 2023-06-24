@@ -13,6 +13,13 @@ conda activate yolo #ativa o ambiente
 pip install -r requirements.txt
 ```
 
+# Rodar o modelo
+Na pasta yolo:
+```Shell
+python detect.py --source #caminho pro arquivo que deseja classificar
+```
+O resultado sera salvo na pasta runs
+
 # Ativar/desativar ambiente conda configurado
 
 Para ativar o ambiente:
