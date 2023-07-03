@@ -1,35 +1,37 @@
 # VisaodeMaquinaPy
-Implementa algoritmo para identificação de carros, pedestres ou motos em videos
 
-# Setupadsdsdwd
+Implementa algoritmo para contagem de veículos e pedestres em videos
 
-Requisitos: Python>=3.7.0, conda e PyTorch>=1.7
+## Setup
+
+Requisitos:
+
+- Ter o conda instalado para criar um ambiente com as dependências que estão no arquivo 'environment.yml'
 
 ```Shell
-git clone https://github.com/ultralytics/yolov5 yolo
-cd yolo
-conda create --name yolo python=3.8
-conda activate yolo #ativa o ambiente
-pip install -r requirements.txt
+conda env create -f environment.yml
 ```
 
-# Rodar o modelo
-Na pasta yolo:
+## Utilizar o tracker
+
+Primeiro, certifique-se de ativar o ambiente tracker com o comando:
+
 ```Shell
-#python3 detect.py --classes 1 2 3 5 6 7 --source #caminho pro arquivo que deseja classificar
-python3 detect.py --classes 2 3 5 6 7 --weights yolov5m.pt --source ./data/videos/corrida
+conda activate tracker #ativa o ambiente
 ```
-O resultado sera salvo na pasta runs
 
-# Ativar/desativar ambiente conda configurado
+Na pasta onde o tracker.py esta, execute:
 
-Para ativar o ambiente:
 ```Shell
-conda activate yolo
-conda deactivate
+python tracker
 ```
+
+Selecione o vídeo e a pasta onde deseja salvar o video com os objetos rastreados.
+
+## Desativar ambiente tracker
+
 Para desativar o ambiente:
+
 ```Shell
-conda activate yolo
 conda deactivate
 ```

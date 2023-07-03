@@ -1,4 +1,4 @@
-name: yolo
+name: tracker
 channels:
   - defaults
 dependencies:
