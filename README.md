@@ -1,7 +1,7 @@
 # VisaodeMaquinaPy
 Implementa algoritmo para identificação de carros, pedestres ou motos em videos
 
-# Setup
+# Setupadsdsdwd
 
 Requisitos: Python>=3.7.0, conda e PyTorch>=1.7
 
@@ -16,7 +16,8 @@ pip install -r requirements.txt
 # Rodar o modelo
 Na pasta yolo:
 ```Shell
-python detect.py --source #caminho pro arquivo que deseja classificar
+#python3 detect.py --classes 1 2 3 5 6 7 --source #caminho pro arquivo que deseja classificar
+python3 detect.py --classes 2 3 5 6 7 --weights yolov5m.pt --source ./data/videos/corrida
 ```
 O resultado sera salvo na pasta runs
 
