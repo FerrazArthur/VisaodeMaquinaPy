@@ -41,8 +41,12 @@ def runTracker(modelName='yolov8n.pt', video_path=None, save_dir=None):
     prediction_files = [f for f in save_dir.glob("prediction*.mp4")]
     prediction_count = len(prediction_files)
 
+    # Primeiro arquivo será 1, não 0
+    if prediction_count == 0:
+        prediction_count = 1
+
     # Gera o nome do arquivo de saida do video resultante
-    save_path = save_dir / f"prediction{prediction_count + 1}.mp4"
+    save_path = save_dir / f"prediction{prediction_count}.mp4"
 
     # Cria o diretório para salvar o video, caso nao exista
     save_dir.mkdir(parents=True, exist_ok=True)
