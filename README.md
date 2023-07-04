@@ -6,7 +6,7 @@ Implementa algoritmo para contagem de veículos e pedestres em videos
 
 Requisitos:
 
-- Ter o conda instalado para criar um ambiente com as dependências que estão no arquivo 'environment.yml'
+- Ter o conda >= 23.3.1 instalado para criar um ambiente com as dependências que estão no arquivo 'environment.yml'
 
 ```Shell
 conda env create -f environment.yml
@@ -23,7 +23,7 @@ conda activate tracker #ativa o ambiente
 Na pasta onde o tracker.py esta, execute:
 
 ```Shell
-python tracker
+python tracker.py
 ```
 
 Selecione o vídeo e a pasta onde deseja salvar o video com os objetos rastreados.
